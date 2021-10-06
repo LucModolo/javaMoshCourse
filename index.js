@@ -2,19 +2,9 @@
 // Objects 
 function wakeup(role){
 
-    
-    switch (role) {
-        case 'guest':
-            console.log('Guest User');
-            break;
-        
-        case 'moderator':
-            console.log('Moderator User');
-            break;
-        default:
-            console.log('unknown User')
-
-    }
+    if (role === 'guest' ) console.log('guest')
+    else if (role === 'moderator') console.log('moderator')
+    else console.log('Unknown User');
 }
 
-wakeup('sdd');
+wakeup('guest');
